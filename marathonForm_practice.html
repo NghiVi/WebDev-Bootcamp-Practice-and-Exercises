@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marathonForm</title>
+</head>
+
+<body>
+    <h1>RACE REGISTRATION!</h1>
+    <form action="/dummy">
+        <label for="fname">First Name</label>
+        <input type="text" name="firstName" id="fname" required minlength="1" maxlength="30">
+        <label for="lname">Last Name</label>
+        <input type="text" name="lastName" id="lname" required minlength="1" maxlength="30">
+
+        <p>Select a Race:</p>
+
+        <p>
+        <div>
+            <label for="raceRadio" id="fun">Fun Run 5K</label>
+            <input type="radio" name="raceName" id="fun" value="Fun Run 5K">
+        </div>
+        <div>
+            <label for="raceRadio" id="half">Half Marathon</label>
+            <input type="radio" name="raceName" id="half" value="Half Marathon">
+        </div>
+        <div>
+            <label for="raceRadio" id="full">Full Marathon</label>
+            <input type="radio" name="raceName" id="full" value="Full Marathon">
+        </div>
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="pass">
+        </p>
+        <button type="submit">Register!</button>
+
+
+    </form>
+</body>
+
+</html>
