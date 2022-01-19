@@ -16,7 +16,7 @@ const p2 = {
 const resetButton = document.querySelector('#reset');
 const winningScoreSelect = document.querySelector('#playto');
 const winningRoundSelect = document.querySelector('#bestof');
-let gameWon = 3;
+let gameWon = 2;
 let winningScore = 3;
 let isGameOver = false;
 
@@ -61,6 +61,7 @@ winningScoreSelect.addEventListener('change', function () {
 
 winningRoundSelect.addEventListener('change', function () {
     gameWon = parseInt(this.value);
+    gameWon = Math.floor(gameWon / 2) + 1; // allow best of 3/5/7/9 rounds
     reset();
 })
 
