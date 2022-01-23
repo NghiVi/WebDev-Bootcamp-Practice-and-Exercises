@@ -1,0 +1,17 @@
+{
+  "name": "LanguageGuesser",
+  "version": "1.0.0",
+  "description": "Text-based tool to guess language of text strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nghi Vi",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "franc": "^6.0.0",
+    "langs": "^2.0.0",
+    "colors": "1.4.0"
+  }
+}
